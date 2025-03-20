@@ -1,13 +1,13 @@
 
-// Function to handle the order now button click
-function orderNow(product) {
-    const phoneNumber = '1234567890';  // Replace with your actual WhatsApp number
-    const message = `Hello, I would like to order the ${product}.`;
-
-    // Encode the URL for WhatsApp chat
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-    // Open WhatsApp
-    window.open(url, '_blank');}
+ // Open WhatsApp
+    window.open(url, '_blank');
+    document.getElementById('orderNow').addEventListener('click', function() {
+        const phoneNumber = '09036161722'; // Replace with your phone number including country code
+        const message = 'Hello, I would like to place an order!'; // Optional message
+        const whatsappURL = `https://wa.me/23409036161722?text=Hello%2CI%20would%20like%20to%20order%20the%20%24%5Bproduct%5D`;
+        window.open(whatsappURL, '_blank');
+    });
+    
+   
 
 
